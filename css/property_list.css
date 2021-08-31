@@ -25,8 +25,9 @@
     background-color: #ffffff;
     border-radius: 2px;
     padding: 15px 0px;
-    max-height: 600px;
-    margin: 20px 20px;
+    max-width: 250px;
+    height: 350px;
+    margin: 1rem;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -130,13 +131,15 @@
     align-items: center;
     margin-top: 3%;
 }
+
 .category-heading a {
     padding-left: 1rem;
     padding-right: 1rem;
     font-weight: bolder;
     color: black;
-    font-size: 2em;
+    font-size: 1.5em;
 }
+
 .more a {
     padding-right: 1rem;
     padding-left: 1rem;
@@ -144,80 +147,105 @@
     font-size: 1em;
     cursor: pointer;
 }
+
 .track {
-   
-    
     display: flex;
     width: 100%;
     align-items: center;
+    justify-content: space-between;
 }
+
+.track i {
+    cursor: pointer;
+}
+
 .individual-slider {
     margin-right: 1rem;
     margin-left: 1rem;
-    max-width: 250px;
-    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 .img {
     display: block;
     margin: 0 auto;
-    width: 100% !important;
+    width: 214px;
     height: 200px;
     object-fit: cover;
+    padding-bottom: 10%;
 }
+
 .button {
     text-align: center;
     margin-top: 10px;
     padding: 10px;
     background-color: #4dc7bc;
 }
+
+.button a {
+    font-size: 0.7em;
+}
+
 .button-text {
     color: white;
 }
+
 .price {
     color: black;
-    font-weight: bold;
-    font-size: 1em;
+    font-size: 0.9em;
 }
+
 .individual-slider-content-wrap {
     display: flex;
     flex-direction: column;
 }
 
+
 /* .track button { position: absolute; top: 50%; transform: translateY(-50%) ; border: 0; background: transparent; cursor: pointer; } .slider_button--left { left: 15px; z-index: 100; } .slider_button--right { right: 15px; z-index: 100; } */
+
 
 /* No Property */
 
 .no-property-container {
     margin: 96px auto 144px;
 }
+
 .no-property-container p {
     font-size: 24px;
     text-align: center;
 }
 
+
 /* Filter Modal */
 
- #filter-modal .modal-dialog {
+#filter-modal .modal-dialog {
     max-width: 600px;
 }
+
 #filter-modal .modal-body h5 {
     color: #777777;
 }
+
 #filter-modal .modal-body hr {
     margin: 4px 0px;
 }
+
 #filter-modal .modal-body button {
     font-size: 14px;
     width: 100px;
     margin: 16px;
 }
+
 #filter-modal .modal-body .btn-active {
     color: #fff;
     background-color: #343a40;
 }
+
 #filter-modal .modal-body button i {
     margin-right: 8px;
 }
+
 #filter-modal .modal-footer button {
     width: 120px;
 }
