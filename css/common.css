@@ -5,7 +5,7 @@
 
 body {
     color: #373737;
-    font-size: 16px;
+    font-size: 1em;
     position: relative;
 }
 
@@ -55,11 +55,20 @@ input[type="radio"] {
     top: 1px;
 }
 
-.breadcrumb {
-    background-color: #e5e3e8;
+nav {
+    background-color: #f3f3f3;
     font-size: 13px;
     border-radius: 0px;
-    margin-bottom: 0px;
+}
+
+.breadcrumb {
+    background-color: #f3f3f3;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    max-width: 2000px;
+    margin: auto;
 }
 
 .container {
@@ -115,8 +124,8 @@ input[type="radio"] {
 /* Header */
 
 .header {
-    background-color: white;
-    font-size: 13px;
+    background-color: #e5e3e8;
+    font-size: 1em;
 }
 
 .header .navbar .navbar-brand img {
@@ -156,17 +165,17 @@ input[type="radio"] {
 
 .footer {
     background-color: #333333;
-    font-size: 13px;
-}
-
-.footer-container {
+    font-size: 1em;
     padding: 24px;
+    max-width: 100%;
 }
 
 .footer-cities {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 2000px;
+    margin: auto;
 }
 
 .footer-city {

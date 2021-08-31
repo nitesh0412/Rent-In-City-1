@@ -4262,6 +4262,9 @@ input[type="submit"].btn-block {
     .navbar-expand-md {
         flex-flow: row nowrap;
         justify-content: flex-start;
+        max-width: 2000px;
+        margin: auto;
+        background-color: #e5e3e8;
     }
     .navbar-expand-md .navbar-nav {
         flex-direction: row;
