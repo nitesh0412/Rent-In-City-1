@@ -178,8 +178,13 @@ nav {
 }
 
 .footer-city {
-    margin-bottom: 8px;
     text-align: center;
+    margin: 0% 5% 0% 8%;
+}
+
+.footer-city a {
+    font-size: 0.8em;
+    margin: auto;
 }
 
 @media (max-width: 768px) {
