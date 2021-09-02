@@ -22,18 +22,18 @@
         </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="my-navbar">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.php">
                     <h1>𝐑𝐞𝐧𝐭 𝐈𝐧 𝐂𝐢𝐭𝐲🌈™</h1>
                 </a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/sign-up.html">
+                        <a class="nav-link" href="sign-up.php">
                             <i class="fas fa-user"></i>Signup
                         </a>
                     </li>
                     <div class="nav-vl"></div>
                     <li class="nav-item">
-                        <a class="nav-link" href="/test.html">
+                        <a class="nav-link" href="sign-in.php">
                             <i class="fas fa-sign-in-alt"></i>Login
                         </a>
                     </li>
@@ -63,7 +63,7 @@
         <h1 class="city-heading">Major Cities</h1>
         <div class="row">
             <div class="city-card-container col-md">
-                <a href="property_list.html">
+                <a href="property_list.php">
                     <div class="city-card rounded-circle">
                         <img src="img/delhi.png" class="city-img" />
                     </div>
@@ -71,7 +71,7 @@
             </div>
 
             <div class="city-card-container col-md">
-                <a href="property_list.html">
+                <a href="property_list.php">
                     <div class="city-card rounded-circle">
                         <img src="img/mumbai.png" class="city-img" />
                     </div>
@@ -79,7 +79,7 @@
             </div>
 
             <div class="city-card-container col-md">
-                <a href="property_list.html">
+                <a href="property_list.php">
                     <div class="city-card rounded-circle">
                         <img src="img/bangalore.png" class="city-img" />
                     </div>
@@ -87,7 +87,7 @@
             </div>
 
             <div class="city-card-container col-md">
-                <a href="property_list.html">
+                <a href="property_list.php">
                     <div class="city-card rounded-circle">
                         <img src="img/hyderabad.png" class="city-img" />
                     </div>
@@ -101,19 +101,19 @@
     <div class="footer">
         <div class="footer-cities">
             <div class="footer-city">
-                <a href="property_list.html">Rent in Delhi</a>
+                <a href="property_list.php">Rent in Delhi</a>
             </div>
             <div class="footer-city">
-                <a href="property_list.html">Rent in Mumbai</a>
+                <a href="property_list.php">Rent in Mumbai</a>
             </div>
             <div class="footer-city">
-                <a href="property_list.html">Rent in Bangalore</a>
+                <a href="property_list.php">Rent in Bangalore</a>
             </div>
             <div class="footer-city">
-                <a href="property_list.html">Rent in Hyderabad</a>
+                <a href="property_list.php">Rent in Hyderabad</a>
             </div>
         </div>
-        <div class="footer-copyright">Made By Shrishty Saxena</div>
+        <div class="footer-copyright">Made by Sloath Bears</div>
     </div>
 </body>
 
