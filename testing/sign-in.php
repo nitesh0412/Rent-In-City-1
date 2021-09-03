@@ -1,7 +1,7 @@
 <?php
-	
-	require_once('dbconfig/config.php');
 	session_start();
+	require_once('dbconfig/config.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/sign-up.css">
+    <link rel="stylesheet" href="test.css">
     <title>Document</title>
 </head>
 <body >
@@ -17,7 +17,7 @@
     <div class="login-box">
         <h2>Login</h2>
         <hr><br>
-        <form action="dashboard.php" method="post">
+        <form action="dashboard.php.php" method="post">
           <div class="user-box">
             <input type="email" name="email" required="">
             <label>E-mail</label>
@@ -31,16 +31,17 @@
 		  <span></span>
             <span></span>
             <span></span>
-            <span></span> 
-</a>
-        </form>
+            <span></span>
+          
+</a> </form>
+      
       </div>
 	  
 	  <?php
 			if(isset($_POST['login']))
 			{
-				$email=$_POST['email'];
-				$password=$_POST['password'];
+				@$email=$_POST['email'];
+				@$password=$_POST['password'];
 				$query = "select * from users where email='$email' and password='$password' ";
 				$query_run = mysqli_query($con,$query);
 				if($query_run)
@@ -51,7 +52,8 @@
 					
 					$_SESSION['email'] = $email;
 					$_SESSION['password'] = $password;
-					header( "Location: dashboard.php");
+					
+					header( "Location: index.php");
 					}
 					else
 					{
@@ -67,5 +69,3 @@
 	  
 </body>
 </html>
-
-

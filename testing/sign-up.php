@@ -1,7 +1,5 @@
-<?php   
-	//session_start();
+<?php
 	require_once('dbconfig/config.php');
-	//phpinfo();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,16 +7,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/sign-up.css">
+    <link rel="stylesheet" href="css/sign.css">
     <title>Document</title>
 </head>
-<body>
+<body >
   
     <div class="login-box">
         <h2>Register</h2>
         <hr><br>
-        <form  method="post">
-             <div class="user-box">
+        <form method="post">
+          <div class="user-box">
             <input type="text" name="name" required="">
             <label> Full-name</label>
           </div>
@@ -26,11 +24,11 @@
             <input type="email" name="email" required >
             <label>E-mail</label>
           </div>
-          <div class="user-box">
-            <input type="tel"  name="phone" required >
+		  <div class="user-box">
+            <input type="tel"  name="phone"   >
             <label>Phone</label>
           </div>
-          <div class="user-box">
+		    <div class="user-box">
             <input type="password" name="password" required="">
             <label>Password</label>
           </div>
@@ -38,17 +36,10 @@
             <input type="text" name="cpassword" required="">
             <label> Confirm-Password</label>
         </div>
-        
-        <a href="#">
-          <button  class="btn" name="register" id="signup_btn" type="submit">Sign Up</button>
-		  <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          
-</a> </form>
+         <button name="register" id="signup_btn" type="submit">Sign Up</button>
+        </form>
       </div>
-      <?php
+		<?php
 			if(isset($_POST['register']))
 			{
 				//echo '<script type="text/javascript">alert("Jai Bajrang bali")</script>';
@@ -70,11 +61,13 @@
 						}
 						else
 						{
-							$query = "insert into users values('','$name','$email','$phone','$password')";
+							$query = "insert into users values('$name','$email','$phone','$password')";
 							$query_run = mysqli_query($con,$query);
 							if($query_run)
 							{
 								echo '<script type="text/javascript">alert("User Registered.. Welcome")</script>';
+								
+								
 							}
 							else
 							{
